@@ -1,0 +1,15 @@
+#app {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 250px;
+  color: green;
+}
+
+.fa-solid {
+  font-size: 50px;
+  margin: 10px;
+}

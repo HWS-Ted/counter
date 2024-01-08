@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{counter}}</h1>
+      <i class="fa-solid fa-plus" @click="numberPlus()"></i>
+      <i class="fa-solid fa-minus" @click="numberMinus"></i>
+    </div>
+
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            counter: 0,
+          };
+        },
+        methods: {
+          numberPlus() {
+            this.counter += 1;
+          },
+          numberMinus() {
+            this.counter -= 1;
+          },
+        },
+      }).mount("#app");
+    </script>
+    <script
+      src="https://kit.fontawesome.com/e3ae2dc99b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
